@@ -17,7 +17,7 @@ const Footer = () => {
     return <FooterList key={idx} data={each}/>
   })
   return (
-    <footer className='bg-footerBg py-8 lg:py-20 font-circular '>
+    <footer className='bg-footerBg py-8 !pb-4 lg:!pb-10 lg:py-24 font-circular '>
       <div className='marginLayout'>
         <div className={`grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4  ${styles.footerSeparator} `}>
           {footerList}

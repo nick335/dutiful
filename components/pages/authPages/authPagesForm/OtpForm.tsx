@@ -39,7 +39,7 @@ const OtpForm = () => {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className='mt-16 mx-auto lg:pb-20 font-satoshi'>
+      <form onSubmit={form.handleSubmit(onSubmit)} className='mt-16 mx-auto pb-14 lg:pb-20 font-satoshi'>
         <FormField 
            control={form.control}
            name="pin"

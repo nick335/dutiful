@@ -36,10 +36,10 @@ const ResetPasswordForm = () => {
 
   return (
     <div>
-     <form  className={`${styles.authForm}`} onSubmit={handleSubmit(onSubmit)}>
+     <form  className={`${styles.authForm} pb-14 lg:pb-20`} onSubmit={handleSubmit(onSubmit)}>
       <PasswordInput 
         label='Enter New Password'
-        placeholder='Type Here' 
+        placeholder='' 
         register={register}
         inputName='password'
         error={errors.password}
@@ -47,7 +47,7 @@ const ResetPasswordForm = () => {
       />
       <PasswordInput 
         label='Re-Enter New Password'
-        placeholder='Type Here' 
+        placeholder='' 
         register={register}
         inputName='confirmPassword'
         error={errors.confirmPassword}

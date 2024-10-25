@@ -28,7 +28,7 @@ const ForgotPasswordForm = () => {
   }
 
   return (
-    <form  className={`${styles.authForm}`} onSubmit={handleSubmit(onSubmit)}>
+    <form  className={`${styles.authForm} pb-20`} onSubmit={handleSubmit(onSubmit)}>
       <EmailInput 
         placeholder=''
         register={register}

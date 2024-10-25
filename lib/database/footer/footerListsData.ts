@@ -8,7 +8,7 @@ export const data = [
       },
       {
         label: 'Contact Us',
-        link: '/contact'
+        link: '/contactus'
       },
       {
         label: 'FAQs',

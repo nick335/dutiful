@@ -13,3 +13,6 @@
 .selectBoxDefault{
   @apply border-[#EEEEFF] text-[#B1BDCA];
 }
+.textArea{
+  @apply w-full rounded-md border-2 border-[#E7EAF1] bg-[#F8FAFD] outline-none py-4 pl-4 transition-all ease-in duration-150 text-base font-medium text-[#1E1E4B] mt-1 min-h-52;
+}

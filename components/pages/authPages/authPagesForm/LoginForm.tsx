@@ -8,8 +8,10 @@ import styles from '../authPages.module.css'
 import {z} from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { SubmitHandler, useForm } from "react-hook-form"
+import { useRouter } from 'next/navigation'
 
 const LoginForm = () => {
+  const navigate = useRouter()
   type FormSchemaType = z.infer<typeof formSchema>
   const formSchema = z.object({
     email:z.string().email("Invalid email").min(1, "Email is Required"),
@@ -25,11 +27,12 @@ const LoginForm = () => {
   //submit form, simple console log
   const onSubmit: SubmitHandler<FormSchemaType> = async (data) => {
     console.log(data)
+    navigate.push('/pricing')
   }
   return (
-    <form  className={`${styles.authForm}`} onSubmit={handleSubmit(onSubmit)}>
+    <form  className={`${styles.authForm} pb-14 lg:pb-20`} onSubmit={handleSubmit(onSubmit)}>
       <EmailInput 
-        placeholder='Ex. bobby@dehaze.com'
+        placeholder=''
         register={register}
         inputName='email'
         error={errors.email}
@@ -37,7 +40,7 @@ const LoginForm = () => {
       />
       <PasswordInput 
         label='Password'
-        placeholder='Type Here' 
+        placeholder='' 
         register={register}
         inputName='password'
         error={errors.password}

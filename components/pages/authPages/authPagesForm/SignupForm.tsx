@@ -13,8 +13,10 @@ import FormButton from '@/components/utility/buttons/FormButton'
 import SelectBox from '@/components/utility/form/SelectBox'
 import { CiUser } from "react-icons/ci";
 import { CiShop } from "react-icons/ci";
+import { useRouter } from 'next/navigation'
 
 const SignupForm = () => {
+  const navigate = useRouter()
   const signupModeData = [
     {
       label: 'Regular User',
@@ -64,6 +66,7 @@ const SignupForm = () => {
   //submit form, simple console log
   const onSubmit: SubmitHandler<FormSchemaType> = async (data) => {
     console.log(data)
+    navigate.push('/login')
   }
   const onChange = (value: string) => {
     setSignupMode(value)
@@ -80,14 +83,14 @@ const SignupForm = () => {
       <form  className={`${styles.authForm}`} onSubmit={handleSubmit(onSubmit)}>
         <TextInput 
           label='Full Name'
-          placeholder='Ex. bobby_dehaze'
+          placeholder=''
           register={register}
           inputName='fullName'
           error={errors.fullName}
           errorMessage={errors.fullName?.message}
         />
         <EmailInput
-          placeholder='Ex. bobby@dehaze.com'
+          placeholder=''
           register={register}
           inputName='email'
           error={errors.email}
@@ -95,7 +98,7 @@ const SignupForm = () => {
         />
         <TextInput 
           label='Phone Number'
-          placeholder='Ex. 1234567890'
+          placeholder=''
           register={register}
           inputName='number'
           error={errors.number}
@@ -103,7 +106,7 @@ const SignupForm = () => {
         />
         <PasswordInput 
           label='Password'
-          placeholder='Type Here' 
+          placeholder='' 
           register={register}
           inputName='password'
           error={errors.password}
@@ -111,7 +114,7 @@ const SignupForm = () => {
         />
         <PasswordInput 
           label='Re-type Password'
-          placeholder='Type Here' 
+          placeholder='' 
           register={register}
           inputName='confirmPassword'
           error={errors.confirmPassword}

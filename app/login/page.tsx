@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import LoginForm from '@/components/pages/authPages/authPagesForm/LoginForm'
 import FormHeader from '@/components/utility/form/FormHeader'
 import React from 'react'
+
+
+export const metadata: Metadata = {
+  title: 'Dutiful | Login',
+  description: 'Login to your account',
+}
 
 const LoginPage = () => {
   return (

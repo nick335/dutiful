@@ -68,6 +68,19 @@ const config: Config = {
 			boxShadow: {
         formbtn: '2px 8px 8px 0px rgba(86, 86, 86, 0.25)', // #56565640 converted to rgba
       },
+			backgroundImage: {
+				'hero-pattern': 'url("/herobg.png")',
+			},
+			keyframes: {
+				comeout: {
+          '0%' : { left: '-70%' },
+          '100%' : { left: '0%' }
+        },
+        goout: {
+          '0%' : { left: '0%' },
+          '100%' : { left: '-70%' }
+        },
+			}
   	}
   },
   // eslint-disable-next-line @typescript-eslint/no-require-imports
