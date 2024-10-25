@@ -1,0 +1,68 @@
+export const PricingPlanData = [
+  {
+    package: 'Basic',
+    price: 'Free',
+    benefits: [
+      'Access to dashboard',
+      'Add up to 2 businesses',
+      'Add up to 2 products/services',
+      'Add up to 2 Images',
+      'Unlimited keywords',
+      'Display service hours and prices',
+      'Display address, contact and email',
+      'Instant chat',
+      'Reviews and ratings',
+      'Profile visibility',
+      'Display website and social network',
+      'Quotes',
+      'Bookmarks',
+    ]
+  },
+  {
+    package: 'Standard',
+    price: 'N20,000/year',
+    benefits: [
+      'Access to dashboard',
+      'Add up to 2 businesses',
+      'Add up to 2 products/services',
+      'Add up to 2 Images',
+      'Unlimited keywords',
+      'Display service hours and prices',
+      'Display address, contact and email',
+      'Instant chat',
+      'Reviews and ratings',
+      'Profile visibility',
+      'Display website and social network',
+      'Quotes',
+      'Bookmarks',
+      'Number of  profile views',
+      'Verified badge (purple)',
+      'Accept & Sell appointments',
+      'Latest offers',
+    ]
+  },
+  {
+    package: 'Premium',
+    price: 'N30,000/year',
+    benefits: [
+      'Access to dashboard',
+      'Add up to 2 businesses',
+      'Add up to 2 products/services',
+      'Add up to 2 Images',
+      'Unlimited keywords',
+      'Display service hours and prices',
+      'Display address, contact and email',
+      'Instant chat',
+      'Reviews and ratings',
+      'Profile visibility',
+      'Display website and social network',
+      'Quotes',
+      'Bookmarks',
+      'Number of  profile views',
+      'Verified badge (Gold)',
+      'Accept & Sell appointments',
+      'Latest offers',
+      '24/7 service and support'
+    ]
+  },
+]
