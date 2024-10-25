@@ -1,0 +1,6 @@
+.authForm{
+  @apply grid grid-cols-1 gap-y-5 mt-6 lg:mt-10;
+}
+.authOtpSlot{
+  @apply border-2 border-[#B6B6E5] rounded-md lg:!rounded-lg !w-10 !h-10 lg:!w-[4.6875rem] lg:!h-[4.6875rem] !bg-[#F3F3F3];
+}

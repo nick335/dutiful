@@ -1,0 +1,9 @@
+.footerHeader{
+  @apply font-medium text-base lg:text-lg text-white;
+}
+.footerSocial{
+  @apply text-[#F5EEFF] w-6 h-6;
+}
+.footerSeparator{
+  @apply border-b border-[#63428E] pb-5 lg:pb-10;
+}

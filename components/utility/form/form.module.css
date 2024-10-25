@@ -1,0 +1,15 @@
+.input{
+  @apply w-full rounded-md border-2 border-[#E7EAF1] bg-[#F8FAFD] outline-none py-4 pl-4 transition-all ease-in duration-150 text-base font-medium text-[#1E1E4B] mt-1;
+}
+.inputError{
+  @apply  rounded-md border-red-500;
+}
+.inputLabel{
+  @apply font-medium text-base lg:text-lg text-[#603F8B];
+}
+.selectBoxActive{
+  @apply border-[#603F8B] text-textHighlight;
+}
+.selectBoxDefault{
+  @apply border-[#EEEEFF] text-[#B1BDCA];
+}
